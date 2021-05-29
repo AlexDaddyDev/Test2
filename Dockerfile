@@ -4,9 +4,7 @@ COPY default.conf etc/nginx/conf.d/default.conf
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
-RUN mkdir usr/share/nginx/html/pic/
-
-COPY moon.jpg usr/share/nginx/html/pic/moon.jpg
+COPY moon.jpg usr/share/nginx/html/moon.jpg
 
 EXPOSE 80
 
